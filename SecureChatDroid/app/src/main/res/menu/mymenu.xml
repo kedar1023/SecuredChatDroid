@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/encrypt"
+        android:id="@+id/Encrypt" />
+
+    <item android:title="@string/decrypt"
+        android:id="@+id/Decrypt" />
+</menu>

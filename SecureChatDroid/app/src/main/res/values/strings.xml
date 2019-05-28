@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SecuredChat</string>
+    <string name="register">Register</string>
+    <string name="join">Click to Join</string>
+    <string name="create">Create an Account</string>
+    <string name="login">Login</string>
+    <string name="sub1">Enter Username</string>
+    <string name="sub2">Enter Password</string>
+    <string name="sub3">Confirm Password</string>
+    <string name="pass">Password</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="nouser">No User found!!</string>
+    <string name="userlist">Chat List</string>
+    <string name="logo">Logo</string>
+    <string name="send">Send</string>
+    <string name="write">Write a message...</string>
+    <string name="agree"> Agree with *</string>
+    <string name="terms"> <u>Terms and Conditions</u></string>
+    <string name="title_activity_terms_actvity">TermsActvity</string>
+    <string name="email">Enter Email</string>
+    <string name="phone">Enter Phone Number</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="forgotPassword2"> <u>Click here</u></string>
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.chetan.firebasechat.Login">
+
+    <!--<ImageView
+        android:id="@+id/logo"
+        android:layout_width="114dp"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/applogo1" />-->
+
+    <TextView
+        android:id="@+id/registerLabel"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_alignEnd="@+id/registerButton"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+    <!--<ImageView
+        android:id="@+id/userImage"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loginLabel"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="29dp"
+        android:contentDescription="@string/sub1"
+        app:srcCompat="@drawable/user" />-->
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_alignStart="@id/password"
+        android:layout_below="@+id/registerLabel"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/sub1"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColorHint="@color/white"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_username"
+        android:drawableTint="@color/black"/>
+
+    <!--<ImageView
+        android:id="@+id/passwordImage"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/username"
+        android:layout_toStartOf="@+id/username"
+        android:contentDescription="@string/sub2"
+        app:srcCompat="@drawable/password" />-->
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_alignStart="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:baselineAligned="false"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableTint="@color/black"
+        android:drawablePadding="15dp"
+        android:hint="@string/sub2"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/password"
+        android:baselineAligned="false"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableTint="@color/black"
+        android:drawablePadding="15dp"
+        android:hint="@string/sub3"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="152sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/confirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/loginbutton"
+        android:clickable="false"
+        android:enabled="false"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/registerbutton"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTerms"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_alignStart="@+id/email"
+        android:layout_alignTop="@+id/textViewAgree"
+        android:layout_marginStart="21dp"
+        android:paddingEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:layout_alignBottom="@+id/registerButton"
+        android:layout_marginBottom="50dp"
+        android:paddingStart="10sp"
+        android:layout_toEndOf="@+id/checkBoxTerms"
+        android:text="@string/agree"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:layout_alignBaseline="@+id/textViewAgree"
+        android:layout_alignBottom="@+id/textViewAgree"
+        android:layout_toRightOf="@+id/textViewAgree"
+        android:text="@string/terms"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableTint="@color/black"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/email"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawableTint="@color/black"
+        android:drawablePadding="15dp"
+        android:hint="@string/phone"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="phone" />
+
+
+</RelativeLayout>
+
